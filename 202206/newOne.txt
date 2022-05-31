@@ -1,1 +1,18 @@
 该仓库存储关于python爬虫的所有学习信息，每周至少四次提交
+
+
+关于git配置：
+1、设置ssh密钥：
+在 git bash 中输入
+    ssh-keygen -t rsa -C "your_email"
+即可在C盘中 用户下、当前登录用户下 .ssh文件中 找到  id_rsa.pub（公钥文件）
+将该文件复制到git/Settings/SSH and  GPG keys中 ，并配置自己的邮箱地址。这里配置是可以实现本地与远程git进行关联
+2、配置git邮箱与账户
+在 git bash 中输入
+    git config --global user.email "yourEmail"
+    git config --global user.name "yourName"
+在向git提交代码时需要识别该配置。
+3、提交代码
+    在修改文件后，打开 git bash ，并输入  git add 文件名（如果文件较多可以使用‘*’代替）
+    并使用 git commit -m （"这里写注释"）    --这里是将文件提交到本地仓库中。
+    使用 git push   将本地仓库修改内容提交到远程仓库中。
