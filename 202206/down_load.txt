@@ -1,0 +1,13 @@
+本文为下载的知识点，
+设计内容：
+	xpath
+	python下载
+
+xpath获取网页上的内容
+1、导包： from lxml import etree
+2、etree获取网页数据：
+	a、tree=etree.HTML(获取到的网页内容)
+	b、自定义内容名称=tree.xpath("这里写xpath的命令")    -- //div[@id='container']//a/img/@src2     这里是指，获取div下的，id为container，下的a标签下的img下的所有src2.（url）
+
+python下载内容  
+	urllib.request.urlretrieve(url,filename)	--这里的filename可以与地址拼接到一起，如 filename="E:/a/"+name+".jpg"   --这里的两对双引号，分别为地址和文件后缀。
